@@ -11,6 +11,7 @@ public class PageController {
 	@RequestMapping(value={"/","/home","/index"})
 	public ModelAndView index()
 	{
+		System.out.println(" inside the pagecontroller !!!");
 		ModelAndView mv = new ModelAndView("page");
 		mv.addObject("greeting", "Spring MVC Welcome!!!");
 		return mv;

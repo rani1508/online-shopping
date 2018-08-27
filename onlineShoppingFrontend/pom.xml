@@ -9,6 +9,7 @@
   <url>http://maven.apache.org</url>
   <properties>
   	<javaee-version>7.0</javaee-version>
+  	<mysql.connector.version>5.1.30</mysql.connector.version>
   </properties>
   <dependencies>
     <dependency>
@@ -17,6 +18,12 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
+    <dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.connector.version}</version>
+		</dependency>
     
     <!-- https://mvnrepository.com/artifact/javax/javaee-api -->
 	<dependency>
@@ -32,6 +39,28 @@
 	    <version>4.3.6.RELEASE</version>
 	</dependency>
 	
+		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-config -->
+	<dependency>
+	    <groupId>org.springframework.security</groupId>
+	    <artifactId>spring-security-config</artifactId>
+	    <version>4.2.7.RELEASE</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-web -->
+	<dependency>
+	    <groupId>org.springframework.security</groupId>
+	    <artifactId>spring-security-web</artifactId>
+	    <version>4.2.7.RELEASE</version>
+	</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-taglibs -->
+	<dependency>
+	    <groupId>org.springframework.security</groupId>
+	    <artifactId>spring-security-taglibs</artifactId>
+	    <version>4.2.7.RELEASE</version>
+	</dependency>
+	
+	
 	
 	<!--jstl -->
 	<dependency>
@@ -39,6 +68,14 @@
 	    <artifactId>jstl</artifactId>
 	    <version>1.2</version>
 	</dependency>
+	
+		<!-- https://mvnrepository.com/artifact/commons-dbcp/commons-dbcp -->
+	<dependency>
+	    <groupId>commons-dbcp</groupId>
+	    <artifactId>commons-dbcp</artifactId>
+	    <version>1.4</version>
+	</dependency>
+	
     	
   </dependencies>
   <build>
